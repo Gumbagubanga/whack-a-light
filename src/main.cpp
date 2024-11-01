@@ -1,9 +1,12 @@
+#include "GameEngine.h"
 #include <Arduino.h>
 
 void setup() {
-// write your initialization code here
+    GameEngine.init();
+
+    Serial.begin(9600);
 }
 
 void loop() {
-// write your code here
+    GameEngine.loop();
 }
